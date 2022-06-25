@@ -4,17 +4,58 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Web API with Ghibli</title>
-
-    <link href="https://fonts.googleapis.com/css?family=Dosis:400,700" rel="stylesheet" />
+    <title>Web with Random Anime Quotes API</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
     <link href="style.css" rel="stylesheet" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.2.0/mdb.min.css" rel="stylesheet"/>
+    
   </head>
 
-  <body>
-    <p>test</p>
-    <div id="root"></div>
-    <script src="scripts.js"></script>
+  <body class="overflow-hidden">
+    <img src="wave.svg" class="img-fluid position-absolute top-0 right-0" style="transform: translate(60em, -10em);">
+    <header>
+
+    </header>
+    <div class="container-fluid">
+      <div class="row justify-content-center">
+      <div class="header-bg mt-5 text-center">
+        <img src="undraw_welcome_cats_thqn.svg" class="img-fluid" width="400" alt="landing_svg">
+      </div>
+      <div class="text-center my-2">
+        <h3>Random Anime Quotes</h3>
+      </div>
+      <div class="generate text-center my-3">
+        <button type="button" class="btn btn-outline-primary" onclick="newQuote()">Generate Quote</button>
+      </div>
+      </div>
+    </div>
+      <div class="container py-1 h-100">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+          <div class="col col-lg-9 col-xl-7">
+            <div class="card" id="quotes" style="border-radius: 15px;">
+              <div class="card-body p-5">
+                <figure class="text-center mb-0">
+                  <blockquote class="blockquote">
+                    <p class="pb-3">
+                      <i class="fas fa-quote-left fa-xs text-primary"></i>
+                      <span class="lead font-italic" id="quote-text"></span>
+                      <i class="fas fa-quote-right fa-xs text-primary"></i>
+                    </p>
+                  </blockquote>
+                  <figcaption class="blockquote-footer mb-0" id="quote-character">
+                  </figcaption>
+                </figure>
+    
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <img src="wave-bottom.svg" class="img-fluid position-fixed left-0 bottom-0 waves-bottom" style="transform: translate(-50em, 4em);">
+      </footer>
+    <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
   </body>
 </html>
